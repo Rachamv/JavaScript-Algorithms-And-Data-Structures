@@ -274,5 +274,159 @@ Note: The entire line becomes i++;, eliminating the need for the equal sign.
 Change the code to use the ++ operator on myVar.
 Test Result:
 ```
-const quotient = 66 / 33;
+let myVar = 87;
+
+// Only change code below this line
+myVar++;
+```
+## Decrement a Number with JavaScript
+You can easily decrement or decrease a variable by one with the -- operator.
+
+i--;
+is the equivalent of
+
+i = i - 1;
+Note: The entire line becomes i--;, eliminating the need for the equal sign.
+
+Change the code to use the -- operator on myVar.
+Test Result:
+```
+let myVar = 11;
+
+// Only change code below this line
+myVar--;
+```
+## Create Decimal Numbers with JavaScript
+We can store decimal numbers in variables too. Decimal numbers are sometimes referred to as floating point numbers or floats.
+
+Note: when you compute numbers, they are computed with finite precision. Operations using floating points may lead to different results than the desired outcome. If you are getting one of these results, open a topic on the [freeCodeCamp forum](https://forum.freecodecamp.org/).
+
+Create a variable myDecimal and give it a decimal value with a fractional part (e.g. 5.7).
+Test Result:
+```
+const ourDecimal = 5.7;
+
+// Only change code below this line
+const myDecimal = 7.9;
+```
+## Multiply Two Decimals with JavaScript
+In JavaScript, you can also perform calculations with decimal numbers, just like whole numbers.
+
+Let's multiply two decimals together to get their product.
+
+Change the 0.0 so that product will equal 5.0.
+Test Result:
+```
+const product = 2.0 * 2.5;
+```
+## Divide One Decimal by Another with JavaScript
+Now let's divide one decimal by another.
+
+Change the 0.0 so that quotient will equal to 2.2.
+Test Result:
+```
+const quotient = 4.4 / 2.0; // Change this line
+```
+## Finding a Remainder in JavaScript
+The remainder operator % gives the remainder of the division of two numbers.
+
+Example
+
+5 % 2 = 1 because
+Math.floor(5 / 2) = 2 (Quotient)
+2 * 2 = 4
+5 - 4 = 1 (Remainder)
+Usage
+In mathematics, a number can be checked to be even or odd by checking the remainder of the division of the number by 2.
+
+17 % 2 = 1 (17 is Odd)
+48 % 2 = 0 (48 is Even)
+Note: The remainder operator is sometimes incorrectly referred to as the modulus operator. It is very similar to modulus, but does not work properly with negative numbers.
+
+Set remainder equal to the remainder of 11 divided by 3 using the remainder (%) operator.
+Test Result:
+```
+const remainder = 11 % 3;
+```
+## Compound Assignment With Augmented Addition
+In programming, it is common to use assignments to modify the contents of a variable. Remember that everything to the right of the equals sign is evaluated first, so we can say:
+
+myVar = myVar + 5;
+to add 5 to myVar. Since this is such a common pattern, there are operators which do both a mathematical operation and assignment in one step.
+
+One such operator is the += operator.
+
+let myVar = 1;
+myVar += 5;
+console.log(myVar);
+6 would be displayed in the console.
+
+Convert the assignments for a, b, and c to use the += operator.
+Test Result:
+```
+let a = 3;
+let b = 17;
+let c = 12;
+
+// Only change code below this line
+a += 12;
+b += 9;
+c += 7;
+```
+## Compound Assignment With Augmented Subtraction
+Like the += operator, -= subtracts a number from a variable.
+
+myVar = myVar - 5;
+will subtract 5 from myVar. This can be rewritten as:
+
+myVar -= 5;
+Convert the assignments for a, b, and c to use the -= operator.
+Test Result:
+```
+let a = 11;
+let b = 9;
+let c = 3;
+
+// Only change code below this line
+a -= 6;
+b -= 15;
+c -= 1;
+```
+## Compound Assignment With Augmented Multiplication
+The *= operator multiplies a variable by a number.
+
+myVar = myVar * 5;
+will multiply myVar by 5. This can be rewritten as:
+
+myVar *= 5;
+Convert the assignments for a, b, and c to use the *= operator.
+Test Result:
+```
+let a = 5;
+let b = 12;
+let c = 4.6;
+
+// Only change code below this line
+a *= 5;
+b *= 3;
+c *= 10;
+```
+## Compound Assignment With Augmented Division
+The /= operator divides a variable by another number.
+
+myVar = myVar / 5;
+Will divide myVar by 5. This can be rewritten as:
+
+myVar /= 5;
+Convert the assignments for a, b, and c to use the /= operator.
+Test Result:
+```
+let a = 48;
+let b = 108;
+let c = 33;
+
+// Only change code below this line
+a /= 12;
+b /= 4;
+c /= 11;
 ```
