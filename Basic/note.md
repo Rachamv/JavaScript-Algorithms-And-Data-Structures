@@ -1,3 +1,4 @@
+# Basic
 ## Comment Your JavaScript Code
 Comments are lines of code that JavaScript will intentionally ignore. Comments are a great way to leave notes to yourself and to other people who will later need to figure out what that code does.
 
@@ -20,6 +21,7 @@ Test result:
 * Your test output will go here
 */
 ```
+----
 ## Declare JavaScript Variables
 In computer science, data is anything that is meaningful to the computer. JavaScript provides eight different data types which are undefined, null, boolean, string, symbol, bigint, number, and object.
 
@@ -42,6 +44,7 @@ Test Result:
 ```
 var myName;
 ```
+----
 ## Storing Values with the Assignment Operator
 In JavaScript, you can store a value in a variable with the assignment operator (=).
 
@@ -63,6 +66,7 @@ var a;
 // Only change code below this line
 a = 7;
 ```
+----
 ## Assigning the Value of One Variable to Another
 After a value is assigned to a variable using the assignment operator, you can assign the value of that variable to another variable using the assignment operator.
 
@@ -83,6 +87,7 @@ var b;
 // Only change code below this line
 b = a;
 ```
+----
 ## Initializing Variables with the Assignment Operator
 It is common to initialize a variable to an initial value in the same line as it is declared.
 
@@ -95,6 +100,7 @@ Test Result:
 // Setup
 var a = 9;
 ```
+----
 ## Declare String Variables
 Previously you used the following code to declare a variable:
 
@@ -126,6 +132,7 @@ a = a + 1;
 b = b + 5;
 c = c + " String!";
 ```
+----
 ## Understanding Case Sensitivity in Variables
 In JavaScript all variables and function names are case sensitive. This means that capitalization matters.
 
@@ -155,6 +162,7 @@ studlyCapVar = 10;
 properCamelCase = "A String";
 titleCaseOver = 9000;
 ```
+----
 ## Explore Differences Between the var and let Keywords
 One of the biggest problems with declaring variables with the var keyword is that you can easily overwrite variable declarations:
 
@@ -179,6 +187,7 @@ Test Result:
 let catName = "Oliver";
 let catSound = "Meow!";
 ```
+----
 ## Declare a Read-Only Variable with the const Keyword
 The keyword let is not the only new way to declare variables. In ES6, you can also declare variables using the const keyword.
 
@@ -200,6 +209,7 @@ let fact = "is cool!"; // Change this line
 fact = "is awesome!";
 console.log(FCC, fact); // Change this line
 ```
+----
 ## Add Two Numbers with JavaScript
 Number is a data type in JavaScript which represents numeric data.
 
@@ -217,6 +227,7 @@ Test Result:
 ```
 const sum = 10 + 10;
 ```
+----
 ## Subtract One Number from Another with JavaScript
 We can also subtract one number from another.
 
@@ -232,6 +243,7 @@ Test Result:
 ```
 const difference = 45 - 33;
 ```
+----
 ## Multiply Two Numbers with JavaScript
 We can also multiply one number by another.
 
@@ -247,6 +259,7 @@ Test Result:
 ```
 const product = 8 * 10;
 ```
+----
 ## Divide One Number by Another with JavaScript
 We can also divide one number by another.
 
@@ -262,6 +275,7 @@ Test Result:
 ```
 const quotient = 66 / 33;
 ```
+----
 ## Increment a Number with JavaScript
 You can easily increment or add one to a variable with the ++ operator.
 
@@ -279,6 +293,7 @@ let myVar = 87;
 // Only change code below this line
 myVar++;
 ```
+----
 ## Decrement a Number with JavaScript
 You can easily decrement or decrease a variable by one with the -- operator.
 
@@ -296,6 +311,7 @@ let myVar = 11;
 // Only change code below this line
 myVar--;
 ```
+----
 ## Create Decimal Numbers with JavaScript
 We can store decimal numbers in variables too. Decimal numbers are sometimes referred to as floating point numbers or floats.
 
@@ -309,6 +325,7 @@ const ourDecimal = 5.7;
 // Only change code below this line
 const myDecimal = 7.9;
 ```
+----
 ## Multiply Two Decimals with JavaScript
 In JavaScript, you can also perform calculations with decimal numbers, just like whole numbers.
 
@@ -319,6 +336,7 @@ Test Result:
 ```
 const product = 2.0 * 2.5;
 ```
+----
 ## Divide One Decimal by Another with JavaScript
 Now let's divide one decimal by another.
 
@@ -327,6 +345,7 @@ Test Result:
 ```
 const quotient = 4.4 / 2.0; // Change this line
 ```
+----
 ## Finding a Remainder in JavaScript
 The remainder operator % gives the remainder of the division of two numbers.
 
@@ -348,6 +367,7 @@ Test Result:
 ```
 const remainder = 11 % 3;
 ```
+----
 ## Compound Assignment With Augmented Addition
 In programming, it is common to use assignments to modify the contents of a variable. Remember that everything to the right of the equals sign is evaluated first, so we can say:
 
@@ -373,6 +393,7 @@ a += 12;
 b += 9;
 c += 7;
 ```
+----
 ## Compound Assignment With Augmented Subtraction
 Like the += operator, -= subtracts a number from a variable.
 
@@ -411,6 +432,7 @@ a *= 5;
 b *= 3;
 c *= 10;
 ```
+----
 ## Compound Assignment With Augmented Division
 The /= operator divides a variable by another number.
 
@@ -430,3 +452,114 @@ a /= 12;
 b /= 4;
 c /= 11;
 ```
+----
+## Escaping Literal Quotes in Strings
+When you are defining a string you must start and end with a single or double quote. What happens when you need a literal quote: " or ' inside of your string?
+
+In JavaScript, you can escape a quote from considering it as an end of string quote by placing a backslash (\) in front of the quote.
+
+```const sampleStr = "Alan said, \"Peter is learning JavaScript\".";```
+This signals to JavaScript that the following quote is not the end of the string, but should instead appear inside the string. So if you were to print this to the console, you would get:
+
+```Alan said, "Peter is learning JavaScript".```
+Use backslashes to assign a string to the myStr variable so that if you were to print it to the console, you would see:
+
+```I am a "double quoted" string inside "double quotes".```
+
+Test Result:
+```
+const myStr = ""; // Change this line
+------------
+const myStr = "I am a, \"JavaScript programmer\" and still learning more about \"Python\".";
+```
+----
+## Quoting Strings with Single Quotes
+String values in JavaScript may be written with single or double quotes, as long as you start and end with the same type of quote. Unlike some other programming languages, single and double quotes work the same in JavaScript.
+
+```
+const doubleQuoteStr = "This is a string"; 
+const singleQuoteStr = 'This is also a string';
+```
+The reason why you might want to use one type of quote over the other is if you want to use both in a string. This might happen if you want to save a conversation in a string and have the conversation in quotes. Another use for it would be saving an 
+```
+<a>
+```
+ tag with various attributes in quotes, all within a string.
+
+```
+const conversation = 'Finn exclaims to Jake, "Algebraic!"';
+```
+However, this becomes a problem if you need to use the outermost quotes within it. Remember, a string has the same kind of quote at the beginning and end. But if you have that same quote somewhere in the middle, the string will stop early and throw an error.
+
+```
+const goodStr = 'Jake asks Finn, "Hey, let\'s go on an adventure?"'; 
+const badStr = 'Finn responds, "Let's go!"';
+
+```
+Here badStr will throw an error.
+
+In the goodStr above, you can use both quotes safely by using the backslash \ as an escape character.
+
+Note: The backslash \ should not be confused with the forward slash /. They do not do the same thing.
+
+Change the provided string to a string with single quotes at the beginning and end and no escape characters.
+
+Right now, the 
+```
+<a>
+```
+ tag in the string uses double quotes everywhere. You will need to change the outer quotes to single quotes so you can remove the escape characters.
+
+Test Result:
+```
+const myStr = '<a href="http://www.example.com" target="_blank">Link</a>;
+```
+----
+## Escape Sequences in Strings
+Quotes are not the only characters that can be escaped inside a string. Escape sequences allow you to use characters you may not otherwise be able to use in a string.
+
+Code	Output
+```
+\'	single quote
+```
+
+```
+\"	double quote
+```
+
+```
+\\	backslash
+```
+
+```
+\n	newline
+```
+
+```
+\t	tab
+```
+
+```
+\r	carriage return
+```
+
+```
+\b	word boundary
+```
+
+```
+\f	form feed 
+```
+Note that the backslash itself must be escaped in order to display as a backslash.
+
+Assign the following three lines of text into the single variable myStr using escape sequences.
+
+```
+FirstLine
+    \SecondLine
+ThirdLine
+```
+
+You will need to use escape sequences to insert special characters correctly. You will also need to follow the spacing as it looks above, with no spaces between escape sequences or words.
+
+Note: The indentation for SecondLine is achieved with the tab escape character, not spaces.
