@@ -14,6 +14,7 @@ multi-line comment */
 NOTE: As you write code, you should regularly add comments to clarify the function of parts of your code. Good commenting can help communicate the intent of your code—both for others and for your future self.
 
 Try creating one of each type of comment.
+
 Test result:
 ```
 // This is an in-line comment.
@@ -40,6 +41,7 @@ Use the var keyword to create a variable called myName.
 
 Hint
 Look at the ourName example above if you get stuck.
+
 Test Result:
 ```
 var myName;
@@ -58,6 +60,7 @@ myVar = 5;
 First, this code creates a variable named myVar. Then, the code assigns 5 to myVar. Now, if myVar appears again in the code, the program will treat it as if it is 5.
 
 Assign the value 7 to variable a.
+
 Test Result:
 ```
 // Setup
@@ -77,6 +80,7 @@ myNum = myVar;
 The above declares a myVar variable with no value, then assigns it the value 5. Next, a variable named myNum is declared with no value. Then, the contents of myVar (which is 5) is assigned to the variable myNum. Now, myNum also has the value of 5.
 
 Assign the contents of a to variable b.
+
 Test Result:
 ```
 // Setup
@@ -95,6 +99,7 @@ var myVar = 0;
 Creates a new variable called myVar and assigns it an initial value of 0.
 
 Define a variable a with var and initialize it to a value of 9.
+
 Test Result:
 ```
 // Setup
@@ -120,6 +125,7 @@ var myLastName = "Victor";
 When JavaScript variables are declared, they have an initial value of undefined. If you do a mathematical operation on an undefined variable your result will be NaN which means "Not a Number". If you concatenate a string with an undefined variable, you will get a string of undefined.
 
 Initialize the three variables a, b, and c with 5, 10, and "I am a" respectively so that they will not be undefined.
+
 Test Result:
 ```
 // Only change code below this line
@@ -150,6 +156,7 @@ var thisVariableNameIsSoLong;
 Modify the existing declarations and assignments so their names use camelCase.
 
 Do not create any new variables.
+
 Test Result:
 ```
 // Variable declarations
@@ -182,6 +189,7 @@ let camper = "David";
 The error can be seen in your browser console.
 
 So unlike var, when you use let, a variable with the same name can only be declared once.
+
 Test Result:
 ```
 let catName = "Oliver";
@@ -202,6 +210,7 @@ The console will display an error due to reassigning the value of FAV_PET.
 Note: It is common for developers to use uppercase variable identifiers for immutable values and lowercase or camelCase for mutable values (objects and arrays). You will learn more about objects, arrays, and immutable and mutable values in later challenges. Also in later challenges, you will see examples of uppercase, lowercase, or camelCase variable identifiers.
 
 Change the code so that all variables are declared using let or const. Use let when you want the variable to change, and const when you want the variable to remain constant. Also, rename variables declared with const to conform to common practices. Do not change the strings assigned to the variables.
+
 Test Result:
 ```
 const FCC = "freeCodeCamp"; // Change this line
@@ -223,6 +232,7 @@ const myVar = 5 + 10;
 myVar now has the value 15.
 
 Change the 0 so that sum will equal 20.
+
 Test Result:
 ```
 const sum = 10 + 10;
@@ -239,6 +249,7 @@ const myVar = 12 - 6;
 myVar would have the value 6.
 
 Change the 0 so the difference is 12.
+
 Test Result:
 ```
 const difference = 45 - 33;
@@ -255,6 +266,7 @@ const myVar = 13 * 13;
 myVar would have the value 169.
 
 Change the 0 so that product will equal 80.
+
 Test Result:
 ```
 const product = 8 * 10;
@@ -271,6 +283,7 @@ const myVar = 16 / 2;
 myVar now has the value 8.
 
 Change the 0 so that the quotient is equal to 2.
+
 Test Result:
 ```
 const quotient = 66 / 33;
@@ -286,6 +299,7 @@ i = i + 1;
 Note: The entire line becomes i++;, eliminating the need for the equal sign.
 
 Change the code to use the ++ operator on myVar.
+
 Test Result:
 ```
 let myVar = 87;
@@ -304,6 +318,7 @@ i = i - 1;
 Note: The entire line becomes i--;, eliminating the need for the equal sign.
 
 Change the code to use the -- operator on myVar.
+
 Test Result:
 ```
 let myVar = 11;
@@ -318,6 +333,7 @@ We can store decimal numbers in variables too. Decimal numbers are sometimes ref
 Note: when you compute numbers, they are computed with finite precision. Operations using floating points may lead to different results than the desired outcome. If you are getting one of these results, open a topic on the [freeCodeCamp forum](https://forum.freecodecamp.org/).
 
 Create a variable myDecimal and give it a decimal value with a fractional part (e.g. 5.7).
+
 Test Result:
 ```
 const ourDecimal = 5.7;
@@ -332,6 +348,7 @@ In JavaScript, you can also perform calculations with decimal numbers, just like
 Let's multiply two decimals together to get their product.
 
 Change the 0.0 so that product will equal 5.0.
+
 Test Result:
 ```
 const product = 2.0 * 2.5;
@@ -341,6 +358,7 @@ const product = 2.0 * 2.5;
 Now let's divide one decimal by another.
 
 Change the 0.0 so that quotient will equal to 2.2.
+
 Test Result:
 ```
 const quotient = 4.4 / 2.0; // Change this line
@@ -363,6 +381,7 @@ In mathematics, a number can be checked to be even or odd by checking the remain
 Note: The remainder operator is sometimes incorrectly referred to as the modulus operator. It is very similar to modulus, but does not work properly with negative numbers.
 
 Set remainder equal to the remainder of 11 divided by 3 using the remainder (%) operator.
+
 Test Result:
 ```
 const remainder = 11 % 3;
@@ -382,6 +401,7 @@ console.log(myVar);
 6 would be displayed in the console.
 
 Convert the assignments for a, b, and c to use the += operator.
+
 Test Result:
 ```
 let a = 3;
@@ -402,6 +422,7 @@ will subtract 5 from myVar. This can be rewritten as:
 
 myVar -= 5;
 Convert the assignments for a, b, and c to use the -= operator.
+
 Test Result:
 ```
 let a = 11;
@@ -421,6 +442,7 @@ will multiply myVar by 5. This can be rewritten as:
 
 myVar *= 5;
 Convert the assignments for a, b, and c to use the *= operator.
+
 Test Result:
 ```
 let a = 5;
@@ -441,6 +463,7 @@ Will divide myVar by 5. This can be rewritten as:
 
 myVar /= 5;
 Convert the assignments for a, b, and c to use the /= operator.
+
 Test Result:
 ```
 let a = 48;
@@ -563,3 +586,264 @@ ThirdLine
 You will need to use escape sequences to insert special characters correctly. You will also need to follow the spacing as it looks above, with no spaces between escape sequences or words.
 
 Note: The indentation for SecondLine is achieved with the tab escape character, not spaces.
+
+Test Result:
+```
+const myStr = "FirstLine\n\t\\SecondLine\nThirdLine"; 
+```
+---
+## Concatenating Strings with Plus Operator
+In JavaScript, when the + operator is used with a String value, it is called the concatenation operator. You can build a new string out of other strings by concatenating them together.
+
+Example
+
+```
+'My name is Alan,' + ' I concatenate.'
+```
+Note: Watch out for spaces. Concatenation does not add spaces between concatenated strings, so you'll need to add them yourself.
+
+Example:
+
+```
+const ourStr = "I come first. " + "I come second.";
+```
+The string I come first. I come second. would be displayed in the console.
+
+Build myStr from the strings This is the start. and This is the end. using the + operator. Be sure to include a space between the two strings.
+
+Test Result:
+```
+const myStr = "This is the start. " + "This is the end.";
+```
+----
+## Concatenating Strings with the Plus Equals Operator
+We can also use the += operator to concatenate a string onto the end of an existing string variable. This can be very helpful to break a long string over several lines.
+
+Note: Watch out for spaces. Concatenation does not add spaces between concatenated strings, so you'll need to add them yourself.
+
+Example:
+```
+let ourStr = "I come first. ";
+ourStr += "I come second.";
+```
+ourStr now has a value of the string I come first. I come second..
+
+
+Build myStr over several lines by concatenating these two strings: This is the first sentence. and This is the second sentence. using the += operator. Use the += operator similar to how it is shown in the example and be sure to include a space between the two strings. Start by assigning the first string to myStr, then add on the second string.
+
+Test Result:
+```
+let myStr = "This is the first sentence. ";
+myStr += "This is the second sentence.";
+```
+----
+## Constructing Strings with Variables
+Sometimes you will need to build a string. By using the concatenation operator (+), you can insert one or more variables into a string you're building.
+
+Example:
+```
+const ourName = "freeCodeCamp";
+const ourStr = "Hello, our name is " + ourName + ", how are you?";
+```
+ourStr would have a value of the string Hello, our name is freeCodeCamp, how are you?.
+
+Set myName to a string equal to your name and build myStr with myName between the strings My name is and and I am well!
+
+Test Result:
+```
+const myName = "Rachamv";
+const myStr = "My name is " + myName + "and I am well!";
+```
+----
+## Appending Variables to Strings
+Just as we can build a string over multiple lines out of string literals, we can also append variables to a string using the plus equals (+=) operator.
+
+Example:
+```
+const anAdjective = "awesome!";
+let ourStr = "freeCodeCamp is ";
+ourStr += anAdjective;
+```
+ourStr would have the value freeCodeCamp is awesome!.
+
+Set someAdjective to a string of at least 3 characters and append it to myStr using the += operator.
+
+Test Result:
+```
+const someAdjective = "awesome!";
+let myStr = "Learning to code is ";
+myStr += someAdjective;
+```
+----
+## Find the Length of a String
+You can find the length of a String value by writing .length after the string variable or string literal.
+```
+console.log("Alan Peter".length);
+```
+The value 10 would be displayed in the console. Note that the space character between "Alan" and "Peter" is also counted.
+
+For example, if we created a variable const firstName = "Ada", we could find out how long the string Ada is by using the firstName.length property.
+
+Use the .length property to set lastNameLength to the number of characters in lastName.
+
+Test Result:
+```
+// Setup
+let lastNameLength = 0;
+const lastName = "Lovelace";
+
+// Only change code below this line
+lastNameLength = lastName.length;
+```
+----
+## Use Bracket Notation to Find the First Character in a String
+Bracket notation is a way to get a character at a specific index within a string.
+
+Most modern programming languages, like JavaScript, don't start counting at 1 like humans do. They start at 0. This is referred to as Zero-based indexing.
+
+For example, the character at index 0 in the word Charles is C. So if const firstName = "Charles", you can get the value of the first letter of the string by using firstName[0].
+
+Example:
+```
+const firstName = "Charles";
+const firstLetter = firstName[0];
+```
+firstLetter would have a value of the string C.
+
+Use bracket notation to find the first character in the lastName variable and assign it to firstLetterOfLastName.
+
+Hint: Try looking at the example above if you get stuck.
+
+Test Result:
+```
+// Setup
+let firstLetterOfLastName = "";
+const lastName = "Lovelace";
+
+// Only change code below this line
+firstLetterOfLastName = lastName[0];
+```
+----
+## Understand String Immutability
+In JavaScript, String values are immutable, which means that they cannot be altered once created.
+
+For example, the following code will produce an error because the letter B in the string Bob cannot be changed to the letter J:
+```
+let myStr = "Bob";
+myStr[0] = "J";
+```
+Note that this does not mean that myStr could not be re-assigned. The only way to change myStr would be to assign it with a new value, like this:
+```
+let myStr = "Bob";
+myStr = "Job";
+```
+Correct the assignment to myStr so it contains the string value of Hello World using the approach shown in the example above.
+
+Test Result:
+```
+// Setup
+let myStr = "Jello World";
+
+// Only change code below this line
+myStr[0] = "H"; // delete this line
+// Only change code above this line
+myStr = "Hello World";
+```
+----
+## Use Bracket Notation to Find the Nth Character in a String
+You can also use bracket notation to get the character at other positions within a string.
+
+Remember that computers start counting at 0, so the first character is actually the zeroth character.
+
+Example:
+```
+const firstName = "Ada";
+const secondLetterOfFirstName = firstName[1];
+```
+secondLetterOfFirstName would have a value of the string d.
+
+Let's try to set thirdLetterOfLastName to equal the third letter of the lastName variable using bracket notation.
+
+Hint: Try looking at the example above if you get stuck.
+
+Test Result:
+```
+// Setup
+const lastName = "Lovelace";
+
+// Only change code below this line
+const thirdLetterOfLastName = lastName[2];
+```
+---
+## Use Bracket Notation to Find the Last Character in a String
+In order to get the last letter of a string, you can subtract one from the string's length.
+
+For example, if const firstName = "Ada", you can get the value of the last letter of the string by using firstName[firstName.length - 1].
+
+Example:
+
+const firstName = "Ada";
+const lastLetter = firstName[firstName.length - 1];
+lastLetter would have a value of the string a.
+
+Use bracket notation to find the last character in the lastName variable.
+
+Hint: Try looking at the example above if you get stuck.
+
+Test Result:
+```
+// Setup
+const lastName = "Lovelace";
+
+// Only change code below this line
+const lastLetterOfLastName = lastName[lastName.length - 1];
+```
+--- 
+##Use Bracket Notation to Find the Nth-to-Last Character in a String
+You can use the same principle we just used to retrieve the last character in a string to retrieve the Nth-to-last character.
+
+For example, you can get the value of the third-to-last letter of the const firstName = "Augusta" string by using firstName[firstName.length - 3]
+
+Example:
+
+const firstName = "Augusta";
+const thirdToLastLetter = firstName[firstName.length - 3];
+thirdToLastLetter would have a value of the string s.
+
+Use bracket notation to find the second-to-last character in the lastName string.
+
+Hint: Try looking at the example above if you get stuck.
+
+Test Result:
+```
+// Setup
+const lastName = "Lovelace";
+
+// Only change code below this line
+const lastLetterOfLastName = lastName[lastName.length - 2];
+```
+---
+## Word Blanks
+You are provided sentences with some missing words, like nouns, verbs, adjectives and adverbs. You then fill in the missing pieces with words of your choice in a way that the completed sentence makes sense.
+
+Consider this sentence - It was really ____, and we ____ ourselves ____. This sentence has three missing pieces- an adjective, a verb and an adverb, and we can add words of our choice to complete it. We can then assign the completed sentence to a variable as follows:
+```
+const sentence = "It was really " + "hot" + ", and we " + "laughed" + " ourselves " + "silly" + ".";
+```
+
+In this challenge, we provide you with a noun, a verb, an adjective and an adverb. You need to form a complete sentence using words of your choice, along with the words we provide.
+
+You will need to use the string concatenation operator + to build a new string, using the provided variables: myNoun, myAdjective, myVerb, and myAdverb. You will then assign the formed string to the wordBlanks variable. You should not change the words assigned to the variables.
+
+You will also need to account for spaces in your string, so that the final sentence has spaces between all the words. The result should be a complete sentence.
+
+Test Result:
+```
+const myNoun = "dog";
+const myAdjective = "big";
+const myVerb = "ran";
+const myAdverb = "quickly";
+
+// Only change code below this line
+const wordBlanks =  "The " + myAdjective + " " + myNoun + " " + myVerb + " " + myAdverb + ".";
+```
