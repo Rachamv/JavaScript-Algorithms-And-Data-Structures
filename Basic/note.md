@@ -847,3 +847,31 @@ const myAdverb = "quickly";
 // Only change code below this line
 const wordBlanks =  "The " + myAdjective + " " + myNoun + " " + myVerb + " " + myAdverb + ".";
 ```
+---
+## Store Multiple Values in one Variable using JavaScript Arrays
+With JavaScript array variables, we can store several pieces of data in one place.
+
+You start an array declaration with an opening square bracket, end it with a closing square bracket, and put a comma between each entry, like this:
+```
+const sandwich = ["peanut butter", "jelly", "bread"];
+```
+Modify the new array myArray so that it contains both a string and a number (in that order).
+
+Test Result:
+```
+const myArray = ["peanut", 5, "jelly", "bread", 2, 5];
+```
+---
+## Nest one Array within Another Array
+You can also nest arrays within other arrays, like below:
+```
+const teams = [["Bulls", 23], ["White Sox", 45]];
+```
+This is also called a multi-dimensional array.
+
+Create a nested array called myArray.
+
+Test Result:
+```
+const myArray = [["Bulls", 23], ["White Sox", 45]];
+```
